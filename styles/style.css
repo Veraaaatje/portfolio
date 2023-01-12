@@ -1,0 +1,197 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+	box-sizing:border-box;  
+  
+	padding: 0;
+	margin: 0;
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+/**************/
+/* TYPOGRAPHY */
+/**************/
+@font-face {
+	font-family: 'bold text';
+    src: url('/fonts/Inter-Bold.ttf');
+    font-style: bold;
+}
+
+@font-face {
+	font-family: 'semi.bold text';
+    src: url('/fonts/Inter-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: 'inter';
+    src: url('/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+@font-face {
+	font-family: 'title text';
+    src: url('/fonts/Urbanist/static/Urbanist-Medium.ttf');
+}
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--color-hover-text:#271287;
+    --color-text: #5a3ce1;
+
+	--color-box: #E9E8EC;
+	--color-button: #737373;
+
+	--color-background: #def777;
+}
+/* #eef9cf */
+
+/********************/
+/* OVER ALL STYLING */
+/********************/
+body {
+	color: var(--color-text);
+	font-family: 'inter', sans-serif;
+
+	background-color: var(--color-background);
+}
+
+
+/**************/
+/* NAVIGATION */
+/**************/
+.index nav {
+   display: flex;
+   margin: 1.5em;
+   align-items: center;
+}
+
+/* Links navbar */
+.index nav div img {
+    max-width: 2em;
+}
+
+/* Rechts navbar */
+.index nav div:nth-of-type(2) {
+    position: absolute;
+    right: 4em;
+}
+
+.index nav a {
+    padding: 0.5em;
+    
+    color: var(--color-text);
+    font-family: 'semi.bold text', 'inter', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.index nav a:hover {
+    font-style: italic;
+    
+    color: var(--color-hover-text);
+}
+
+
+/******************/
+/* HEADER SECTION */
+/******************/
+.index header {
+    position: relative;
+    top: 0;
+    right: 0vw;
+}
+
+.index header section {
+    display: flex;
+    position: absolute;
+    
+    top: 3.2vw;
+    right: -3vw;
+   
+
+    transform: rotate(90deg);
+    max-width: 10em;
+    
+}
+
+.index header section a {
+    padding: 1em;
+    
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+/************************************/
+/* BEGIN SECTION INTRO * INDEX PAGE */
+/************************************/
+.index main section:nth-of-type(1) {
+    padding: 6vw 12vw 10vw 15vw;
+}
+
+.index main section:nth-of-type(1) p:nth-of-type(2) {
+    max-width: 28em;
+    
+    padding-top: 0.5em;
+    padding-bottom: 3em;
+}
+
+.index main section h1 {
+   font-family: 'title text', 'inter', sans-serif; 
+   font-size: 5em;
+}
+
+
+/************************************************/
+/* SECTION WITH DIFFERENT EXERCISES * INDEX PAGE*/
+/************************************************/
+.index img {
+    max-width: 50vw; 
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.hidden1 {
+    visibility: hidden;
+}
+
+.index main section:nth-of-type(2) {
+    display: flex;
+    position: relative;
+}
+
+.index main section:nth-of-type(2) article img:hover  {
+    opacity: 50%;
+}
+
+.index main section:nth-of-type(2) article:nth-of-type(1) h2 {
+    position: absolute;
+    top: 16vw;
+    left: 6vw;
+
+    font-family: 'title text', 'inter', sans-serif;
+    font-size: 5.5vw;
+}
+
+.index main section:nth-of-type(2) article:nth-of-type(2) h2 {
+    position: absolute;
+    top: 16vw;
+    right: 8vw;
+
+    font-family: 'title text', 'inter', sans-serif;
+    font-size: 5.5vw;
+}
+
+a:hover {
+    color: var(--color-text);
+}
